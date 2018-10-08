@@ -15,13 +15,24 @@
 ### 実行例
 ```
 #1 [Wav files read]
-#2 [Feature extraction]
-#3 [Evaluation]
-    1 <--> 1: 1.0
-    1 <--> 2: 0.9862
-    1 <--> 3: 0.9492
-    1 <--> 4: 0.9054
-    1 <--> 5: 0.7837
+> | Index : Path
+> | 1 : wav/1_Piano_C3_Dur4_1.wav
+> | 2 : wav/2_Piano_C3_Dur4_2.wav
+> | 3 : wav/3_Piano_C3_Dur4_1_StartDelay.wav
+> | 4 : wav/4_Piano_C3_Dur2.wav
+> | 5 : wav/5_Piano_C3_Dur4_Reverb.wav
 
-Eelapsed time: 0.5157[sec]
+#2 [Feature extraction]
+> Selected feature type : SPECTRUM_CENTROID
+
+#3 [Evaluation]
+> Reference : 1 (wav/1_Piano_C3_Dur4_1.wav)
+> | Reference , Target : Score
+> | 1 , 1 : 1.0
+> | 1 , 2 : 0.9862
+> | 1 , 3 : 0.9492
+> | 1 , 4 : 0.9054
+> | 1 , 5 : 0.7837
+
+Total elapsed time : 0.5319[sec]
 ```
